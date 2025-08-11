@@ -1,0 +1,104 @@
+.container-doctorreports {
+  width: 75%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 32px;
+  padding: 36px 40px 28px 40px;
+  box-shadow: 0 12px 40px rgba(41, 72, 255, 0.16);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.title-doctorreports {
+  font-size: 2rem;
+  color: #2948ff;
+  font-weight: 800;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.no-reports {
+  font-size: 1.1rem;
+  color: #6b7a99;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.report-list {
+  list-style: none;
+  padding: 0 12px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.report-card {
+  background: #f7f9fb;
+  border-radius: 20px;
+  padding: 20px 28px;
+  box-shadow: 0 6px 24px rgba(41, 72, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.25s ease;
+}
+
+.report-card:hover {
+  box-shadow: 0 10px 36px rgba(41, 72, 255, 0.18);
+}
+
+.patient-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.ipfs-link {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2948ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  max-width: fit-content;
+}
+
+.ipfs-link:hover {
+  color: #1a37d9;
+  text-decoration: underline;
+}
+
+/* Loading and error messages */
+.loading, .error {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container-doctorreports {
+    width: 90%;
+    padding: 30px 24px 24px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-doctorreports {
+    width: 95%;
+    margin: 20px auto;
+    padding: 28px 20px 24px 20px;
+  }
+  .report-card {
+    padding: 16px 20px;
+  }
+  .patient-name {
+    font-size: 1.1rem;
+  }
+  .ipfs-link {
+    font-size: 0.95rem;
+  }
+}
